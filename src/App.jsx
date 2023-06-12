@@ -1,5 +1,5 @@
 import './App.css'
-
+import TodoList from './TodoList';
 function App() {
  
 const handleAddTodo = (e)=> {
@@ -13,21 +13,11 @@ const handleAddTodo = (e)=> {
         <input type='submit' value="Add"/>
         <input type='text' required/>
       </form>
-      <div className='todoList'>
-          <ul className='todoListItem'>
-            <li className='item-checkbox'>
-              <input type='checkbox' name='item-checkbox'/>
-              todo message here we goes....
-            </li>
-            <li className='item-delete'>
-            <button>dellete</button>
-            <button>update</button>
-            </li>  
-          </ul>
-      </div>
+      <TodoList/>
     </div>
    </div>
   ); 
 }
+
 
 export default App
